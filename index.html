@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Mary Life First Hospital</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #350b5c;
+            color: aliceblue;
+        }
+        header, section, footer {
+            padding: 40px 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            color: bisque;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        button {
+            background-color: bisque;
+            color: black;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+        .services li {
+            margin-bottom: 10px;
+        }
+        .doctors, .testimonials {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .doctor, .testimonial {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+        }
+        .doctor img, .testimonial img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        form input, form textarea {
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: none;
+            border-radius: 5px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        iframe {
+            margin-top: 20px;
+            border: none;
+            border-radius: 10px;
+        }
+        footer {
+            background-color: #240842;
+            font-size: 0.9em;
+            padding: 20px;
+        }
+        a {
+            color: bisque;
+            text-decoration: none;
+        }
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+        .social-btn {
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-weight: bold;
+            color: white;
+        }
+        .facebook {
+            background-color: #3b5998;
+        }
+        .instagram {
+            background-color: #E1306C;
+        }
+        .tiktok {
+            background-color: #010101;
+        }
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 30px;
+            background-color: #25D366;
+            color: white;
+            font-size: 30px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 60px;
+            z-index: 100;
+            text-decoration: none;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+        }
+
+        @media (max-width: 768px) {
+            .doctors, .testimonials {
+                flex-direction: column;
+                align-items: center;
+            }
+            .doctor, .testimonial {
+                width: 90%;
+            }
+            input, textarea {
+                width: 90%;
+                max-width: 400px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>ST. MARY LIFE FIRST HOSPITAL</h1>
+    <em>Your life is our priority</em><br><br>
+    <a href="tel:+254701584264"><button>Call Now</button></a>
+</header>
+
+<section>
+    <h2>About Us</h2>
+    <p>We are a modern medical facility located in Kisumu, dedicated to providing high-quality, affordable healthcare. With a team of experienced professionals and state-of-the-art equipment, your health is in good hands.</p>
+</section>
+
+<section class="services">
+    <h2>Our Services</h2>
+    <ul>
+        <li>Outpatient and inpatient care</li>
+        <li>Radiology: MRI, X-ray, Ultrasound, Endoscopy, ECG, Echo</li>
+        <li>Paediatrics</li>
+        <li>Maternity services</li>
+        <li>Orthopaedic treatments</li>
+        <li>Physiotherapy and Occupational Therapy</li>
+        <li>Dialysis</li>
+        <li>24/7 Ambulance services</li>
+    </ul>
+</section>
+
+<section>
+    <h2>Meet Our Doctors</h2>
+    <div class="doctors">
+        <div class="doctor">
+            <img src="https://via.placeholder.com/100" alt="Dr. Achieng">
+            <h3>Dr. Achieng Otieno</h3>
+            <p>Paediatrician with over 10 years of experience.</p>
+        </div>
+        <div class="doctor">
+            <img src="https://via.placeholder.com/100" alt="Dr. Otonde">
+            <h3>Dr. Charles Otonde</h3>
+            <p>Orthopaedic Surgeon passionate about patient recovery.</p>
+        </div>
+        <div class="doctor">
+            <img src="https://via.placeholder.com/100" alt="Dr. Mkwana">
+            <h3>Dr. Solomon Mkwana</h3>
+            <p>Orthopaedic Surgeon passionate about patient recovery.</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Patient Testimonials</h2>
+    <div class="testimonials">
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Patient 1">
+            <p>"Amazing service and great staff. I felt safe and cared for!"</p>
+            <strong>– Janet, Kisumu</strong>
+        </div>
+        <div class="testimonial">
+            <img src="https://via.placeholder.com/100" alt="Patient 2">
+            <p>"The maternity wing is fantastic. Thank you for everything!"</p>
+            <strong>– Alice, Nyalenda</strong>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Book an Appointment</h2>
+    <form action="https://formsubmit.co/stmarylifefirsthospital@gmail.com" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="tel" name="phone" placeholder="Phone Number" required>
+        <textarea name="message" placeholder="Describe your symptoms or reason for visit" rows="5" required></textarea>
+        <button type="submit">Submit</button>
+    </form>
+</section>
+
+<section>
+    <h2>Contact Us</h2>
+    <p>Kombedu Market, Opposite NITA, Kisumu-Busia Road</p>
+    <p>Phone: <a href="tel:+254701584264">+254701584264</a><br>
+       Email: <a href="mailto:stmarylifefirsthospital@gmail.com">stmarylifefirsthospital@gmail.com</a></p>
+</section>
+
+<section>
+    <h2>Follow Us on Social Media</h2>
+    <div class="social-links">
+        <a href="https://facebook.com/your-page" target="_blank" class="social-btn facebook">Facebook</a>
+        <a href="https://instagram.com/your-handle" target="_blank" class="social-btn instagram">Instagram</a>
+        <a href="https://tiktok.com/@your-handle" target="_blank" class="social-btn tiktok">TikTok</a>
+    </div>
+</section>
+
+<a href="https://wa.me/254701584264" target="_blank" class="whatsapp-float" title="Chat on WhatsApp">💬</a>
+
+<footer>
+    &copy; 2025 St. Mary Life First Hospital. All rights reserved.
+</footer>
+
+</body>
+</html>
